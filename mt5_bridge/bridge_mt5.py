@@ -106,11 +106,8 @@ def main():
             deposits_all = stats.get('total_deposit', 0)
             withdrawals = stats.get('total_withdrawal', 0)
             
-            # ======================================================
-            # RUMUS REVISI CLIENT: NET DEPOSIT ONLY
             # Investment = (Initial + TopUp) - WD
             # Secara matematika sama dengan: Total Deposit - WD
-            # ======================================================
             custom_investment = deposits_all - withdrawals
             
             # Safety: Kalau WD habis (Investment <= 0), pakai Balance sisa
@@ -128,13 +125,13 @@ def main():
                 "floating": info.equity - info.balance,
                 "growth": growth, 
                 
-                # --- DATA DISPLAY ---
+                # DATA DISPLAY
                 "initial_deposit": custom_investment, # Label Investment
                 "pure_initial_deposit": stats.get('pure_initial_deposit', 0), # Label Initial
                 "top_up_only": stats.get('top_up_only', 0), # Label Deposits (TopUp)
                 "withdrawals": withdrawals,
                 
-                # --- DATA RAW ---
+                # DATA RAW
                 "deposits": deposits_all, 
                 "profit_total": profit_total,
                 "win_rate": stats.get('win_rate', 0),

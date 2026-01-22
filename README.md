@@ -10,6 +10,27 @@ A centralized realtime monitoring system for MetaTrader 4 (MT4) and MetaTrader 5
 
 ---
 
+## 🛠️ Tech Stack
+
+This project leverages a modern full-stack architecture combined with trading platform scripting.
+
+### **Frontend (Dashboard)**
+* ![React](https://img.shields.io/badge/React-19.x-61DAFB?style=flat&logo=react) **React.js** - Component-based UI library.
+* ![Vite](https://img.shields.io/badge/Vite-Build_Tool-646CFF?style=flat&logo=vite) **Vite** - Next generation frontend tooling.
+* ![Recharts](https://img.shields.io/badge/Recharts-Visualization-22b5bf?style=flat) **Recharts** - Composable charting library (Radar & Bar Charts).
+* ![Axios](https://img.shields.io/badge/Axios-HTTP_Client-5A29E4?style=flat&logo=axios) **Axios** - Promise based HTTP client.
+
+### **Backend (API Server)**
+* ![NodeJS](https://img.shields.io/badge/Node.js-Runtime-339933?style=flat&logo=node.js) **Node.js** - JavaScript runtime environment.
+* ![Express](https://img.shields.io/badge/Express.js-Framework-000000?style=flat&logo=express) **Express.js** - Fast, unopinionated web framework.
+* ![CORS](https://img.shields.io/badge/NPM-CORS-CB3837?style=flat&logo=npm) **CORS** - Handling Cross-Origin Resource Sharing.
+
+### **Trading Integration**
+* ![Python](https://img.shields.io/badge/Python-3.11-3776AB?style=flat&logo=python) **Python** (MetaTrader 5) - Bridge script using `MetaTrader5` library.
+* ![MQL4](https://img.shields.io/badge/MQL4-MetaTrader_4-0075C2?style=flat) **MQL4** (MetaTrader 4) - Custom EA Script for data pushing.
+
+---
+
 ## 📂 Project Structure
 
 * **`/server`**: Node.js Express backend that acts as the data aggregator/API.
