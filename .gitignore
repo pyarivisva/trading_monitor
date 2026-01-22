@@ -4,6 +4,8 @@ __pycache__/
 
 frontend/src/accounts.js
 
+dist/
+
 .env
 *.env
 
