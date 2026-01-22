@@ -1,0 +1,11 @@
+node_modules/
+__pycache__/
+.DS_Store
+
+frontend/src/accounts.js
+
+.env
+*.env
+
+*.pem
+*.key
